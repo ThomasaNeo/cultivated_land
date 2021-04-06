@@ -1,0 +1,15 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+</head>
+<body>
+
+{% for house in houses %}
+    <div>province_code: {{ house.province_code }}   <br>
+           Short: {{ house.short }} <br>
+           stars:  {{ house.n_star }}  <br>
+           sentiment: {{house.sentiment}}
+    </div>
+{% endfor %}
+</body>
